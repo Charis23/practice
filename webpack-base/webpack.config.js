@@ -20,5 +20,11 @@ module.exports = {
         rules: [
             { test: /\.js|jsx$/, use: 'babel-loader', exclude: /node_modules/ }
         ]
-    }
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'], // default is .js file, 若要自己指定，则必须也要指定.js
+        alias: { // 自定义别名
+            '@': path.join(__dirname, './src')
+        }
+    },
 }

@@ -2,11 +2,17 @@
 import React from 'react';  // 创建component，虚拟DOM元素， 生命周期
 import ReactDOM from 'react-dom'; // 在页面上展示component， 虚拟DOM
 
-import Hello from '@/components/Hello'; // 省略的后缀名.jsx是在webpack.config.js中resolve->extensions中指定的
 
 // 2. create component
 // 组件名首字母必须大写
-
+function Hello(props) {
+    return <div>
+        Hello Component
+        <br />
+        {props.name} is {props.age} years old and its gender is {props.gender}
+    </div>;
+    // return null; // return null 则表示该组件什么都不渲染
+}
 
 const dog = {
     name: 'Jerry',
