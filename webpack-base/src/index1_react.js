@@ -1,4 +1,4 @@
-// webpack-dev-server 打包好的main.js是托管到内存中的根目录下面的， 虽然是看不到的
+// webpack-dev-server 打包好的main.js是托管到内存中的根目录下面的， 虽然是看不到的, 此时是不用显式地在index.html中引入main.js的
 // console.log('webpack test');
 
 import React from 'react';  // 创建component，虚拟DOM元素， 生命周期
