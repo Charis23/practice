@@ -3,7 +3,7 @@ import React from 'react';  // 创建component，虚拟DOM元素， 生命周期
 import ReactDOM from 'react-dom'; // 在页面上展示component， 虚拟DOM
 
 
-// 2. create component
+// 2. create component -> function component -> 【无状态组件】
 // 组件名首字母必须大写
 function Hello(props) {
     return <div>
